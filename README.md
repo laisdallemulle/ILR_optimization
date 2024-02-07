@@ -5,15 +5,14 @@ This Python script provides a solution to distribute a given list of numbers acr
 ## Author
 
 - **Laís de Oliveira Dalle Mulle**
-- **Email:** lais@rrc.org
-
+- **Email:** laisdallemulle@rrccompanies.com
 ## Date
 
 - 2024-02-07
 
 ## Description
 
-The algorithm employs a greedy approach to distribute numbers. It sorts the numbers in descending order and iteratively places each number in the line that, after the placement, would have the least total sum compared to the others. This heuristic method aims to minimize the difference between the sums of the lines, achieving a relatively balanced distribution without the need for exhaustive search.
+The algorithm employs a greedy approach to distribute numbers. It sorts the numbers in descending order and iteratively places each number in the line that, after the placement, would have the least total sum compared to the others. This method aims to minimize the difference between the sums of the lines, achieving a relatively balanced distribution without the need for exhaustive search.
 
 ## Usage
 
@@ -25,7 +24,7 @@ To use this script, you need to have Python installed on your system. You can th
 # ==============================================================================
 # Date: 2024-02-07
 # Author: Laís de Oliveira Dalle Mulle
-# Email: lais@rrc.org
+# Email: laisdallemulle@rrccompanies.com
 # ==============================================================================
 
 def distribute_numbers_greedy(numbers, num_lines):
