@@ -9,13 +9,13 @@
 # ==============================================================================
 
 
-def distribute_str_qty_greedy(str_qty, num_lines):
+def distribute_str_qty_greedy(str_qty, num_inverters):
     # Sorts the numbers to facilitate distribution starting with the largest
     str_qty.sort(reverse=True)
 
     # Initializes lists to store the numbers in each line
-    lines = [[] for _ in range(num_lines)]
-    sums = [0] * num_lines
+    lines = [[] for _ in range(num_inverters)]
+    sums = [0] * num_inverters
 
     # Distributes each number to the line that results in the smallest difference of sums after insertion
     for number in str_qty:
@@ -28,12 +28,12 @@ def distribute_str_qty_greedy(str_qty, num_lines):
 
 # Input values
 str_qty = [24, 24, 22, 24, 22, 22, 24, 22]  # List of string qtys to be distributed
-num_lines = 3  # Desired number of inverters
+num_inverters = 3  # Desired number of inverters
 power_inverter = 744.958
 str_moduleqty = 28 #number of modules per string
 pot_module = 545.5 #module power W
 
-distributed_lines, line_sums = distribute_str_qty_greedy(str_qty, num_lines)
+distributed_lines, line_sums = distribute_str_qty_greedy(str_qty, num_inverters)
 
 # Prints the result
 for i, line in enumerate(distributed_lines):
